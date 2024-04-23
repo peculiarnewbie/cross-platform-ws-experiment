@@ -25,10 +25,10 @@ public class SocketControlled : MonoBehaviour
         isMovingUp = true;
     }
 
-    public void StopMovingUp(float yPos)
+    public void StopMovingUp()
     {
         isMovingUp = false;
-        transform.position = new Vector3(transform.position.x, yPos, transform.position.z);
+        // transform.position = new Vector3(transform.position.x, yPos, transform.position.z);
     }
 
     public void StartMovingDown()
@@ -36,10 +36,10 @@ public class SocketControlled : MonoBehaviour
         isMovingDown = true;
     }
 
-    public void StopMovingDown(float yPos)
+    public void StopMovingDown()
     {
         isMovingDown = false;
-        transform.position = new Vector3(transform.position.x, yPos, transform.position.z);
+        // transform.position = new Vector3(transform.position.x, yPos, transform.position.z);
     }
 
 }

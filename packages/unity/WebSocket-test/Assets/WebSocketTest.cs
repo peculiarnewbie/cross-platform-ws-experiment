@@ -118,8 +118,8 @@ public class WebSocketTest : MonoBehaviour
 
                         if (msgString == "up") socketControlled.StartMovingUp();
                         else if (msgString == "dn") socketControlled.StartMovingDown();
-                        else if (msgString == "su") socketControlled.StopMovingUp(transform.position.y);
-                        else if (msgString == "sd") socketControlled.StopMovingDown(transform.position.y);
+                        else if (msgString == "su") socketControlled.StopMovingUp();
+                        else if (msgString == "sd") socketControlled.StopMovingDown();
 
                     }
                     ms.Seek(0, SeekOrigin.Begin);
